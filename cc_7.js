@@ -86,3 +86,14 @@ function createBudgetTracker() {
 let budget = createBudgetTracker();
 console.log(budget(300)); // Expected output: "Current Balance: -$300"
 console.log(budget(200)); // Expected output: "Current Balance: -$500"
+
+//Task 8 - Business Growth Projection
+
+function calculateGrowth(years, revenue) {
+    if (years === 0 || years >=10) {
+        return `Projected Revenue $${revenue}`;
+    }
+    return calculateGrowth(years + 1, revenue * 1.05);
+}
+console.log(calculateGrowth(8,1000));// projected revenue shoud be $1102
+console.log(calculateGrowth(5,5000)); // projected revenue should be $6381 
