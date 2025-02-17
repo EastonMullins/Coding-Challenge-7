@@ -39,6 +39,7 @@ calculateLoyaltyDiscount(200, 2); // Expected output: "Discounted Price: $190.00
 //Task 4 - Product Shipping Costs Calculation
 
 function calculateShippingCost(weight, location, expedited = false){
+    let cost = 0
     if (location === "USA"){
         cost = (5 + (0.5 * weight));
     }
