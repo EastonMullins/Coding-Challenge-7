@@ -38,7 +38,7 @@ calculateLoyaltyDiscount(200, 2); // Expected output: "Discounted Price: $190.00
 
 //Task 4 - Product Shipping Costs Calculation
 
-function calculateShippingCost(weight, location, expedited = fasle){
+function calculateShippingCost(weight, location, expedited = false){
     if (location === "USA"){
         cost = (5 + (0.5 * weight));
     }
@@ -56,8 +56,8 @@ calculateShippingCost(5, "Canada", false); // Expected output: "Shipping Cost: $
 //Task 5 - Business Loan Interest Calculator
 
 function calculateLoanInterest(principal, rate, years){
-    let Interest = (principal * rate * years);
-    console.log(`Total Interest: $${Interest}`);
+    let interest = (principal * rate * years);
+    console.log(`Total Interest: $${interest}`);
 }
 calculateLoanInterest(1000, 0.05, 3); // Expected output: "Total Interest: $150.00"
 calculateLoanInterest(5000, 0.07, 5); // Expected output: "Total Interest: $1750.00"
@@ -65,8 +65,8 @@ calculateLoanInterest(5000, 0.07, 5); // Expected output: "Total Interest: $1750
 //Task 6 - Filtering High-Value Transactions
 
 function filterHighValueTransactions(transactions, filterFunction) {
-    let HighValueTransactions = transactions.filter(filterFunction);
-    console.log(`${HighValueTransactions}`);
+    let highValueTransactions = transactions.filter(filterFunction);
+    console.log(`${highValueTransactions}`);
 }
 let transactions = [500, 1200, 3000, 800, 2200];
 filterHighValueTransactions(transactions, amount => amount > 1000);
