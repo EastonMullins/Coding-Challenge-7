@@ -16,3 +16,22 @@ function calculateHourlyWage(salary, hoursPerWeek){
 }
 calculateHourlyWage(52000, 40); // Expected output: "Hourly Wage: $25.00"
 calculateHourlyWage(75000, 35); // Expected output: "Hourly Wage: $41.21"
+
+
+//Task 3 - Customer Loyalty Discount
+
+let calculateLoyaltyDiscount = (amount, years) => {
+
+    if (years >= 5) {
+        discount = (amount * (1 - 0.15));
+    }
+    else if (years >= 3) {
+        discount = (amount * (1 - .1));
+    }
+    else if (years < 3) {
+        discount = (amount * (1 - 0.05));
+    }
+    console.log(`Discounted Price: $${discount}`);
+}
+calculateLoyaltyDiscount(100, 6); // Expected output: "Discounted Price: $85.00"
+calculateLoyaltyDiscount(200, 2); // Expected output: "Discounted Price: $190.00"
